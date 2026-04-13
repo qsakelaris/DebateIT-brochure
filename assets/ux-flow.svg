@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" role="img" aria-labelledby="t2 d2">
+  <title id="t2">User participation flow</title>
+  <desc id="d2">From home feed swipe to join debate, then comment in the debate room</desc>
+  <rect width="560" height="200" fill="#0f1419"/>
+  <text x="280" y="26" text-anchor="middle" fill="#e8eef5" font-family="Segoe UI,system-ui,sans-serif" font-size="15" font-weight="700">Typical user path</text>
+  <g font-family="Segoe UI,system-ui,sans-serif" font-size="11">
+    <rect x="24" y="52" width="100" height="56" rx="8" fill="#1a2332" stroke="#3d9cf0"/>
+    <text x="74" y="78" text-anchor="middle" fill="#e8eef5">Home / feed</text>
+    <text x="74" y="94" text-anchor="middle" fill="#9aa8bc">swipe cards</text>
+    <rect x="154" y="52" width="100" height="56" rx="8" fill="#1a2332" stroke="#34d399"/>
+    <text x="204" y="78" text-anchor="middle" fill="#e8eef5">Choose stance</text>
+    <text x="204" y="94" text-anchor="middle" fill="#9aa8bc">Agree / Disagree</text>
+    <rect x="284" y="52" width="100" height="56" rx="8" fill="#1a2332" stroke="#f87171"/>
+    <text x="334" y="78" text-anchor="middle" fill="#e8eef5">In debate</text>
+    <text x="334" y="94" text-anchor="middle" fill="#9aa8bc">My Debates</text>
+    <rect x="414" y="52" width="122" height="56" rx="8" fill="#1a2332" stroke="#2d3a4d"/>
+    <text x="475" y="78" text-anchor="middle" fill="#e8eef5">Discuss</text>
+    <text x="475" y="94" text-anchor="middle" fill="#9aa8bc">threaded comments</text>
+  </g>
+  <path d="M 128 80 L 148 80" stroke="#3d9cf0" stroke-width="2.5" marker-end="url(#ma)"/>
+  <path d="M 258 80 L 278 80" stroke="#3d9cf0" stroke-width="2.5" marker-end="url(#ma)"/>
+  <path d="M 388 80 L 408 80" stroke="#3d9cf0" stroke-width="2.5" marker-end="url(#ma)"/>
+  <defs>
+    <marker id="ma" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <polygon points="0 0, 7 3.5, 0 7" fill="#3d9cf0"/>
+    </marker>
+  </defs>
+  <text x="280" y="150" text-anchor="middle" fill="#9aa8bc" font-family="Segoe UI,system-ui,sans-serif" font-size="11">Moderation may review posts before they appear publicly.</text>
+</svg>

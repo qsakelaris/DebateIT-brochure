@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — DebateIt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="logo" href="index.html"><img src="assets/logo.jpg" alt="Debate It — home" width="160" height="40" /></a>
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="index.html" aria-current="page">About</a></li>
+            <li><a href="tutorial.html">User tutorial</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="download.html">Download</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>About DebateIt</h1>
+      <p class="lead">
+        DebateIt is a web platform for structured, civil debate. Participants discover topics, take a clear stance, and discuss in dedicated rooms—supported by moderation tooling so conversations stay on track.
+      </p>
+
+      <div class="cta-row">
+        <!-- Replace href with your deployed product (private repo is fine; this is just the public app URL). -->
+        <a class="btn btn--primary" href="https://debateit.xyz">Open DebateIt (live product)</a>
+        <a class="btn" href="tutorial.html">How to use DebateIt</a>
+      </div>
+
+      <div class="callout">
+        <p>
+          <strong>Source code</strong> for this capstone project lives in a <strong>private</strong> repository. This brochure site is public and only links to the product you choose to deploy—not to the repo itself.
+        </p>
+      </div>
+
+      <h2>Our team</h2>
+      <figure class="figure">
+        <img
+          src="assets/pictureOfus.png"
+          alt="Group photo of the four DebateIt capstone team members standing outdoors in front of green trees"
+        />
+        <figcaption class="caption">
+          The DebateIt capstone team (left to right): Ahmad Al Najjar, DK Lee, Milo Atwood, and Quinn Sakelaris. Individual bios and contact links are on the <a href="team.html">Team</a> page.
+        </figcaption>
+      </figure>
+
+      <h2>Problem we address</h2>
+      <p>
+        Online discussion often sprawls across feeds without clear positions, limits, or guardrails. It is hard to tell who is arguing for what, easy for threads to turn toxic, and difficult for communities to run fair, focused exchanges. DebateIt reframes discussion as <em>joinable debates</em>: each topic has defined sides, capacity limits, and a path from discovery (browsing or swiping debates) to participation (comments in a debate room).
+      </p>
+      <p>
+        The product also integrates automated content screening so teams can experiment with healthier norms at scale, while still allowing human moderation workflows where the course or deployment requires them.
+      </p>
+
+      <h2>What you can do in the app</h2>
+      <ul class="tag-list" aria-label="Feature highlights">
+        <li>Create and browse debates</li>
+        <li>Join with Agree / Disagree stance</li>
+        <li>Queue when rooms are full</li>
+        <li>Threaded comments</li>
+        <li>Profiles, groups, notifications</li>
+        <li>ML-assisted moderation</li>
+      </ul>
+
+      <h2>Technologies</h2>
+      <p>
+        The stack follows a classic SPA plus API design. The browser client is a <strong>React</strong> application (Create React App) that talks to a <strong>Django</strong> backend with <strong>Django REST Framework</strong>. Data is stored in <strong>PostgreSQL</strong> for production-style deployments (SQLite is supported for local development). Authentication uses Django’s session-based flow. For toxic or policy-sensitive text, the backend can run a Hugging Face pipeline using the <strong>unitary/toxic-bert</strong> model, alongside human moderation views where enabled.
+      </p>
+
+      <figure class="figure">
+        <img
+          src="assets/architecture.png"
+          alt="DebateIT architecture: users to React frontend on AWS (auth, post cards, general UI, posts and comments), Django backend on AWS (Auth API, algorithm, General API, database, decision layer, AI API), and DebateIT moderation server on Linux/Docker with ML civility and toxicity, gateway, Gemini 2.0 Flash, plus CI/CD runner"
+        />
+        <figcaption class="caption">
+          System architecture: React and Django on AWS, database and decision flow, and a dedicated moderation server (ML phases, gateway, Gemini 2.0 Flash, Docker/Linux, CI/CD).
+        </figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img src="assets/ux-flow.svg" width="560" height="200" alt="Diagram: flow from home feed through stance to debate discussion" />
+        <figcaption class="caption">Simplified user journey from discovering debates to participating in a room.</figcaption>
+      </figure>
+
+      <h2>Product screenshots</h2>
+      <p>
+        Add two or three PNG or JPG screenshots from your deployed app (or local dev) so reviewers see the real UI. Save them under <code>assets/</code> and reference them here—for example <code>assets/screenshot-home.png</code>.
+      </p>
+      <figure class="figure">
+        <p class="caption" style="margin: 0">
+          <em>Placeholder:</em> insert <code>&lt;img src="assets/your-screenshot.png" alt="…" /&gt;</code> when ready.
+        </p>
+      </figure>
+    </main>
+
+    <footer class="site-footer">
+      <p>DebateIt — capstone web presence. <a href="team.html">Team</a></p>
+    </footer>
+  </body>
+</html>

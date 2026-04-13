@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Team — DebateIt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="logo" href="index.html"><img src="assets/logo.jpg" alt="Debate It — home" width="160" height="40" /></a>
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="tutorial.html">User tutorial</a></li>
+            <li><a href="team.html" aria-current="page">Team</a></li>
+            <li><a href="download.html">Download</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Inline icons (currentColor) for contact row -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0; overflow: hidden" aria-hidden="true">
+      <symbol id="icon-email" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+        />
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.64.21-2.35.62V8.5h-2.8v8.2h2.8v-4.93c0-.68.67-1.53 1.75-1.53 1 0 1.5.73 1.5 1.69v4.77h2.76M6.88 6.56a1.68 1.68 0 0 1-1.68-1.68A1.68 1.68 0 0 1 6.88 3.2a1.69 1.69 0 0 1 1.69 1.68 1.69 1.69 0 0 1-1.69 1.68m1.39 10.94V8.5H5.5v8.2h2.77z"
+        />
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+        />
+      </symbol>
+    </svg>
+
+    <main>
+      <h1>Project staff</h1>
+      <p class="lead">
+        Four team members built DebateIt. Each section below has a <strong>head shot</strong>, a <strong>biography</strong> (aim for <strong>150–250 words</strong> for the course), and <strong>contact icons</strong> (email, LinkedIn, GitHub). Add your photo as
+        <code>assets/headshots/&lt;filename&gt;.jpg</code> or update the <code>src</code> path. Replace mailto, LinkedIn, and GitHub URLs with your own.
+      </p>
+
+      <!-- 1. Ahmad Al Najjar — photo LEFT -->
+      <article class="team-member" id="ahmad-al-najjar">
+        <figure class="team-member__photo">
+          <img
+            src="assets/headshots/ahmad-al-najjar.jpg"
+            alt="Professional headshot of Ahmad Al Najjar"
+            width="220"
+            height="220"
+            onerror="this.onerror=null;this.src='assets/headshot-placeholder.svg'"
+          />
+        </figure>
+        <div class="team-member__bio">
+          <h2 class="team-member__name">Ahmad Al Najjar</h2>
+          <p class="team-member__role">University of Utah · DebateIt capstone — <em>edit degree / major line</em></p>
+
+          <section class="team-member__bio-write" aria-labelledby="bio-heading-ahmad">
+            <h3 class="team-bio-heading" id="bio-heading-ahmad">Biography</h3>
+            <p>
+              <strong>Write your biography in this section (150–250 words).</strong> Cover your degree program and graduation timeline, your main responsibilities on DebateIt, other research or work affiliations, technical or academic interests, and what
+              you hope to do after the capstone. Replace this paragraph and add more paragraphs as needed until you are in the assigned word range.
+            </p>
+            <p>
+              <em>Delete these placeholder sentences when you are done.</em> A strong bio often mentions specific contributions (for example frontend, backend, moderation pipeline, DevOps, or documentation), tools you used, and how you collaborated with
+              teammates.
+            </p>
+          </section>
+
+          <div class="contact-icons" role="list" aria-label="Professional contact — Ahmad Al Najjar">
+            <a class="contact-icons__link" role="listitem" href="mailto:ahmad.alnajjar@utah.edu" aria-label="Email Ahmad Al Najjar">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-email" /></svg>
+            </a>
+            <a class="contact-icons__link" role="listitem" href="https://www.linkedin.com/in/ahmad-al-najjar" aria-label="Ahmad Al Najjar on LinkedIn" rel="noopener noreferrer" target="_blank">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-linkedin" /></svg>
+            </a>
+            <a class="contact-icons__link" role="listitem" href="https://github.com/ahmad-al-najjar" aria-label="Ahmad Al Najjar on GitHub" rel="noopener noreferrer" target="_blank">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-github" /></svg>
+            </a>
+          </div>
+          <p class="contact-icons__hint"><small>Update the three links above to your real email, LinkedIn profile URL, and GitHub profile URL.</small></p>
+        </div>
+      </article>
+
+      <!-- 2. Quinn Sakelaris — photo RIGHT -->
+      <article class="team-member team-member--flip" id="quinn-sakelaris">
+        <figure class="team-member__photo">
+          <img
+            src="assets/headshots/quinn-sakelaris.jpg"
+            alt="Professional headshot of Quinn Sakelaris"
+            width="220"
+            height="220"
+            onerror="this.onerror=null;this.src='assets/headshot-placeholder.svg'"
+          />
+        </figure>
+        <div class="team-member__bio">
+          <h2 class="team-member__name">Quinn Sakelaris</h2>
+          <p class="team-member__role">University of Utah · DebateIt capstone — <em>edit degree / major line</em></p>
+
+          <section class="team-member__bio-write" aria-labelledby="bio-heading-quinn">
+            <h3 class="team-bio-heading" id="bio-heading-quinn">Biography</h3>
+            <p>
+              <strong>Write your biography in this section (150–250 words).</strong> Cover your degree program and graduation timeline, your main responsibilities on DebateIt, other research or work affiliations, technical or academic interests, and what
+              you hope to do after the capstone. Replace this paragraph and add more paragraphs as needed until you are in the assigned word range.
+            </p>
+            <p>
+              <em>Delete these placeholder sentences when you are done.</em> A strong bio often mentions specific contributions (for example frontend, backend, moderation pipeline, DevOps, or documentation), tools you used, and how you collaborated with
+              teammates.
+            </p>
+          </section>
+
+          <div class="contact-icons" role="list" aria-label="Professional contact — Quinn Sakelaris">
+            <a class="contact-icons__link" role="listitem" href="mailto:quinn.sakelaris@utah.edu" aria-label="Email Quinn Sakelaris">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-email" /></svg>
+            </a>
+            <a class="contact-icons__link" role="listitem" href="https://www.linkedin.com/in/quinn-sakelaris" aria-label="Quinn Sakelaris on LinkedIn" rel="noopener noreferrer" target="_blank">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-linkedin" /></svg>
+            </a>
+            <a class="contact-icons__link" role="listitem" href="https://github.com/quinn-sakelaris" aria-label="Quinn Sakelaris on GitHub" rel="noopener noreferrer" target="_blank">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-github" /></svg>
+            </a>
+          </div>
+          <p class="contact-icons__hint"><small>Update the three links above to your real email, LinkedIn profile URL, and GitHub profile URL.</small></p>
+        </div>
+      </article>
+
+      <!-- 3. Milo Atwood — photo LEFT -->
+      <article class="team-member" id="milo-atwood">
+        <figure class="team-member__photo">
+          <img
+            src="assets/headshots/milo-atwood.jpg"
+            alt="Professional headshot of Milo Atwood"
+            width="220"
+            height="220"
+            onerror="this.onerror=null;this.src='assets/headshot-placeholder.svg'"
+          />
+        </figure>
+        <div class="team-member__bio">
+          <h2 class="team-member__name">Milo Atwood</h2>
+          <p class="team-member__role">University of Utah · DebateIt capstone — <em>edit degree / major line</em></p>
+
+          <section class="team-member__bio-write" aria-labelledby="bio-heading-milo">
+            <h3 class="team-bio-heading" id="bio-heading-milo">Biography</h3>
+            <p>
+              <strong>Write your biography in this section (150–250 words).</strong> Cover your degree program and graduation timeline, your main responsibilities on DebateIt, other research or work affiliations, technical or academic interests, and what
+              you hope to do after the capstone. Replace this paragraph and add more paragraphs as needed until you are in the assigned word range.
+            </p>
+            <p>
+              <em>Delete these placeholder sentences when you are done.</em> A strong bio often mentions specific contributions (for example frontend, backend, moderation pipeline, DevOps, or documentation), tools you used, and how you collaborated with
+              teammates.
+            </p>
+          </section>
+
+          <div class="contact-icons" role="list" aria-label="Professional contact — Milo Atwood">
+            <a class="contact-icons__link" role="listitem" href="mailto:milo.atwood@utah.edu" aria-label="Email Milo Atwood">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-email" /></svg>
+            </a>
+            <a class="contact-icons__link" role="listitem" href="https://www.linkedin.com/in/milo-atwood" aria-label="Milo Atwood on LinkedIn" rel="noopener noreferrer" target="_blank">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-linkedin" /></svg>
+            </a>
+            <a class="contact-icons__link" role="listitem" href="https://github.com/milo-atwood" aria-label="Milo Atwood on GitHub" rel="noopener noreferrer" target="_blank">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-github" /></svg>
+            </a>
+          </div>
+          <p class="contact-icons__hint"><small>Update the three links above to your real email, LinkedIn profile URL, and GitHub profile URL.</small></p>
+        </div>
+      </article>
+
+      <!-- 4. DK Lee — photo RIGHT -->
+      <article class="team-member team-member--flip" id="dk-lee">
+        <figure class="team-member__photo">
+          <img
+            src="assets/headshots/dk-lee.jpg"
+            alt="Professional headshot of DK Lee"
+            width="220"
+            height="220"
+            onerror="this.onerror=null;this.src='assets/headshot-placeholder.svg'"
+          />
+        </figure>
+        <div class="team-member__bio">
+          <h2 class="team-member__name">DK Lee</h2>
+          <p class="team-member__role">University of Utah · DebateIt capstone — <em>edit degree / major line</em></p>
+
+          <section class="team-member__bio-write" aria-labelledby="bio-heading-dk">
+            <h3 class="team-bio-heading" id="bio-heading-dk">Biography</h3>
+            <p>
+              <strong>Write your biography in this section (150–250 words).</strong> Cover your degree program and graduation timeline, your main responsibilities on DebateIt, other research or work affiliations, technical or academic interests, and what
+              you hope to do after the capstone. Replace this paragraph and add more paragraphs as needed until you are in the assigned word range.
+            </p>
+            <p>
+              <em>Delete these placeholder sentences when you are done.</em> A strong bio often mentions specific contributions (for example frontend, backend, moderation pipeline, DevOps, or documentation), tools you used, and how you collaborated with
+              teammates.
+            </p>
+          </section>
+
+          <div class="contact-icons" role="list" aria-label="Professional contact — DK Lee">
+            <a class="contact-icons__link" role="listitem" href="mailto:dk.lee@utah.edu" aria-label="Email DK Lee">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-email" /></svg>
+            </a>
+            <a class="contact-icons__link" role="listitem" href="https://www.linkedin.com/in/dk-lee" aria-label="DK Lee on LinkedIn" rel="noopener noreferrer" target="_blank">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-linkedin" /></svg>
+            </a>
+            <a class="contact-icons__link" role="listitem" href="https://github.com/dk-lee" aria-label="DK Lee on GitHub" rel="noopener noreferrer" target="_blank">
+              <svg class="contact-icons__svg" width="24" height="24" aria-hidden="true"><use href="#icon-github" /></svg>
+            </a>
+          </div>
+          <p class="contact-icons__hint"><small>Update the three links above to your real email, LinkedIn profile URL, and GitHub profile URL.</small></p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>DebateIt — capstone web presence. <a href="index.html">About</a></p>
+    </footer>
+  </body>
+</html>

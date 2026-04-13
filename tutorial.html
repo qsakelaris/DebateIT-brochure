@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User tutorial — DebateIt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="logo" href="index.html"><img src="assets/logo.jpg" alt="Debate It — home" width="160" height="40" /></a>
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="tutorial.html" aria-current="page">User tutorial</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="download.html">Download</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>User tutorial</h1>
+      <p class="lead">
+        This page is a concise guide for someone who has just opened DebateIt. It matches the flows implemented in the product: account access, discovering debates, joining with a stance, and participating in the debate room.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn--primary" href="https://debateit.xyz">Go to DebateIt</a>
+      </div>
+
+      <h2>Before you begin</h2>
+      <p>
+        DebateIt runs in the browser. Use an up-to-date Chrome, Firefox, or Safari. If your instructor or team gave you a specific URL, use that; otherwise use the deployed link on the <a href="index.html">About</a> page once you have published the app.
+      </p>
+
+      <h2>Create an account or sign in</h2>
+      <ol class="steps">
+        <li>
+          Open the DebateIt site and choose <strong>Sign up</strong> if you are new, or <strong>Log in</strong> if you already registered.
+        </li>
+        <li>
+          Complete email verification if the deployment requires it (check your inbox for a verification message).
+        </li>
+        <li>
+          If you forget your password, use the password reset flow from the login screen and follow the email instructions.
+        </li>
+      </ol>
+
+      <h2>Discover debates</h2>
+      <ol class="steps">
+        <li>
+          After signing in, start from the <strong>home</strong> experience. You will see debates you can browse or swipe through, depending on how the UI presents the feed.
+        </li>
+        <li>
+          Debates you are already in, waiting to join, or that you explicitly skipped are filtered out of this discovery view so you see fresh options.
+        </li>
+        <li>
+          Use categories, search, or filters if your deployment exposes them, to narrow topics you care about.
+        </li>
+      </ol>
+
+      <h2>Join a debate (stance)</h2>
+      <ol class="steps">
+        <li>
+          When you find a debate you want to join, choose your position: typically <strong>Agree</strong> or <strong>Disagree</strong>. This records your stance for that room.
+        </li>
+        <li>
+          If the debate has a participant limit and the room is full, you may be placed in a <strong>waiting</strong> state until a slot opens.
+        </li>
+        <li>
+          If you are not interested, you can <strong>skip</strong>; skipped debates stay out of your discovery feed unless your team changes that policy.
+        </li>
+        <li>
+          If you <strong>leave</strong> a debate later, it can show up again in discovery so you may rejoin if you change your mind.
+        </li>
+      </ol>
+
+      <h2>Participate in the room</h2>
+      <ol class="steps">
+        <li>
+          Open <strong>My Debates</strong> (or the sidebar list) to see debates where you are active or waiting.
+        </li>
+        <li>
+          Enter a debate to read the prompt, see other participants’ positions when the UI exposes them, and post <strong>threaded comments</strong>.
+        </li>
+        <li>
+          Respect moderation messages. Automated screening may flag toxic content; some deployments also route posts through human review, so your text might appear after a short delay.
+        </li>
+      </ol>
+
+      <h2>Account, groups, and notifications</h2>
+      <ol class="simple">
+        <li>Visit <strong>Account</strong> or <strong>Settings</strong> to update profile details and preferences.</li>
+        <li>Use <strong>Groups</strong> if your deployment enables community spaces tied to debates.</li>
+        <li>Check the <strong>notification center</strong> for replies, moderation updates, or invites.</li>
+      </ol>
+
+      <h2>If something goes wrong</h2>
+      <p>
+        Confirm you are on the correct URL, try a hard refresh, and sign out and back in. If the app reports an error after posting, wait a moment: the first moderation model load on a fresh server can take longer. For course demos, contact your team using the emails on the <a href="team.html">Team</a> page.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p>DebateIt — capstone web presence. <a href="index.html">About</a></p>
+    </footer>
+  </body>
+</html>
